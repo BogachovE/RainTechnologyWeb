@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  min-height: 0;
+  min-width: 0;
+}
+
+:root {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 300;
+  --color-1: #3f51b5; //main
+  --color-2: #f0f1f3; // bg
+  --color-3: #82b1ff; //checked
+  background-color: var(--color-2);
+}
+
+#root, html,body {
+  height: 100vh;
+}
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  height:100%;
+  background-color: var(--color-2);
+}
+
+body {
+  padding-top: 7rem;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+/***КНОПКИ ВНИЗУ***/
+
+.btn-group {
+  &>button:not(:first-child) {
+    margin-left: 2rem;
+  }
+}
+
+.btn,
+.btn-full,
+.btn-border {
+  background-color: transparent;
+  font-size: 2.4rem;
+  color: gray;
+  height: 2.8rem;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  transition-duration: .2s;
+  &:active {
+    transform: scale(1.01);
+  }
+  &:hover {
+    transform: scale(1.01);
+    //background-color: var(--color-2);
+  }
+}
+
+//.btn.active {
+//  color: whitesmoke;
+//  border-bottom: .1rem solid whitesmoke;
+//}
+
+.btn.header {
+  font-weight: 300;
+  color: #bdbdbd;
+  border-bottom: .2rem solid transparent;
+}
+
+.btn.header.active {
+  font-weight: 500;
+  color: whitesmoke;
+  border-bottom: .2rem solid whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  color: transparent;
+}
+
+/***КНОПКИ ВВЕРХУ***/
+
+[hidden]{ display: none !important; }
+
+/*AAAAAAAPPPPPPPPPPP below*/
+
+.App {
+  text-align: center;
+  margin-top: 7rem;
+}
+
+main[role='main']{
+  overflow-y: auto;
+  height: 100%;
+}
+

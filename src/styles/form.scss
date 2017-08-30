@@ -1,0 +1,35 @@
+.form {
+  padding: 3rem;
+  > .main {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    .form-input {
+      padding: 0 1rem
+    }
+    padding: 1rem;
+    > .price {
+      display: inline-flex;
+      height: 4rem;
+      align-items: center;
+      > .form-input {
+        height: 5rem;
+        font-size: 1.6rem;
+        > label {
+          top: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.name-description,
+.price {
+  flex: 1 0 auto;
+  display: flex;
+  & > div {
+    flex: 1 0 auto;
+    justify-content: space-between;
+  }
+}
